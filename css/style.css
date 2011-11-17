@@ -361,6 +361,14 @@ header{
 	width:100%;
 }
 
+nav{
+	background:url(../img/nav-background.png) repeat-x top left;
+	display:block;
+	height:50px;
+	width:100%;
+	margin-top:-5px;
+}
+
 header h1{
 	float:left;
 }
