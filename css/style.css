@@ -453,8 +453,8 @@ footer{
 }
 
 @media only screen and (max-device-width: 480px){
-	body{
-		height:110%;
+	html,body{
+		height:112%;
 	}
 	header{
 		display:none;
