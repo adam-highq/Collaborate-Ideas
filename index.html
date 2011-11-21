@@ -4,13 +4,6 @@
 	<meta name="viewport" content="width=768px; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 	<meta name="viewport" content="width=320px; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 	<script type="text/javascript" src="js/scripts.js"></script>
-	<script type="text/javascript">
-	function loaded() {
-		document.addEventListener('touchmove', function(e){ e.preventDefault(); });
-		myScroll = new iScroll('scroller');
-	}
-	document.addEventListener('DOMContentLoaded', loaded);
-	</script>
 </head>
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 	<header>
@@ -24,7 +17,7 @@
 		<button class="btn primary">Menu</button>
 	</nav>
 	<div class="recentFeed">
-		<ul id="scroller">
+		<ul>
 		    <li>
 		        <a href="">
 		            <img src="" alt="" />
