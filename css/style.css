@@ -358,7 +358,6 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner{padding:0;
 html,body{
 	width:100%;
 	height:102%;
-	overflow:hidden;
 }
 
 header{
