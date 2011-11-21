@@ -4,32 +4,7 @@
 	<meta name="viewport" content="width=768px; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 	<meta name="viewport" content="width=320px; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 	<script type="text/javascript" src="js/scripts.js"></script>
-	<script type="application/x-javascript">
-
-	addEventListener("load", function()
-	{
-	    setTimeout(updateLayout, 0);
-	}, false);
-
-	var currentWidth = 0;
-
-	function updateLayout()
-	{
-	    if (window.innerWidth != currentWidth)
-	    {
-	        currentWidth = window.innerWidth;
-
-	        var orient = currentWidth == 320 ? "profile" : "landscape";
-	        document.body.setAttribute("orient", orient);
-	        setTimeout(function()
-	        {
-	            window.scrollTo(0, 1);
-	        }, 100);
-	    }
-	}
-
-	setInterval(updateLayout, 100);
-	
+	<script type="text/javascript">
 	function loaded() {
 		document.addEventListener('touchmove', function(e){ e.preventDefault(); });
 		myScroll = new iScroll('scroller');
@@ -37,7 +12,7 @@
 	document.addEventListener('DOMContentLoaded', loaded);
 	</script>
 </head>
-<body>
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 	<header>
 		<h1>Logo</h1>
 		<form action="" method="post">
