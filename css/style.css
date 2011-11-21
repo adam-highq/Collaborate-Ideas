@@ -393,7 +393,7 @@ header h1{
 
 header form{
 	float:right;
-	margin:10px 10px;	
+	margin:8px 10px;	
 }
 
 nav input[type=text]{
@@ -403,6 +403,7 @@ nav input[type=text]{
 	-webkit-box-shadow: 1px 1px 1px 1px rgba(255,255,255,0.26);
 	-moz-box-shadow: 1px 1px 1px 1px rgba(255,255,255,0.26);
 	box-shadow: 1px 1px 1px 1px rgba(255,255,255,0.26);
+	margin-right:430px;
 }
 	
 nav input[type=text]:focus{
@@ -414,6 +415,10 @@ nav input[type=text]:focus{
 
 nav .primary{
 	margin:9px 10px;
+}
+
+nav img{
+	display:none;
 }
 
 .recentFeed{
@@ -453,5 +458,13 @@ nav .primary{
 	.recentFeed{
 		margin-top:0;
 		position:inherit;
+	}
+	nav img{
+		display:block;
+		margin:3px -3px 0 0;
+		float:right;
+	}
+	nav input[type=text]{
+		display:none;
 	}
 }
