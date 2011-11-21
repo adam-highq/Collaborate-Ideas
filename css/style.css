@@ -448,4 +448,8 @@ nav .primary{
 	header{
 		display:none;
 	}
+	.recentFeed{
+		margin-top:0;
+		position:inherit;
+	}
 }
