@@ -376,6 +376,11 @@ nav{
 
 header h1{
 	float:left;
+	text-indent:-999em;
+	background:url(../img/logo.png) no-repeat;
+	width:122px;
+	height:29px;
+	margin:7px 10px;
 }
 
 header form{
@@ -384,6 +389,23 @@ header form{
 }
 
 header input[type=text]:focus{
-	width:200px;
+	width:150px;
 	-webkit-transition:0.6s;
+}
+
+.recentFeed ul{
+	margin:0;
+	overflow:scroll;
+	height:100%;
+	display:block;
+	position:fixed;
+	float:right;
+}
+
+.recentFeed ul li{
+	display:block;
+	width:420px;
+	height:200px;
+	margin-bottom:2px;
+	background:#bdbdbd;
 }
