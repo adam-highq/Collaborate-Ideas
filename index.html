@@ -11,12 +11,15 @@
 	  window.scrollTo(0, 1);
 	}, 200);
 	
+	var scrollContent;
+	var scrollSide;
+
 	function loaded() {
-		document.addEventListener('touchmove', function(e){ e.preventDefault(); });
-		myScroll = new iScroll('scroller');
+		scrollContent = new iScroll('contentScroller');
+		scrollSide = new iScroll('navScroller');
 	}
-	
-	document.addEventListener('touchstart', function(e){ e.preventDefault(); }, false);
+
+	document.addEventListener('touchmove', function(e){ e.preventDefault(); }, false);
 	document.addEventListener('DOMContentLoaded', loaded, false);
 	
 	</script>
@@ -37,7 +40,7 @@
 		<button class="btn primary"><b>Menu</b></button>
 	</nav>
 	<div class="recentFeed">
-		<ul>
+		<ul id="navScroller">
 		    <li>
 		        <a href="">
 		            <img src="" alt="" />
@@ -145,7 +148,7 @@
 		</ul>
 	</div>
 	<div class="docs">
-		<ul>
+		<ul id="contentScroller">
 		    <li>
 		        <a href="">
 		            <img src="" alt="" />
