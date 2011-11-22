@@ -454,6 +454,8 @@ nav img{
 	display:block;
 	height:100%;
 	width:100%;
+	right:420px;
+	position:relative;
 }
 
 .docs ul{
@@ -468,6 +470,11 @@ nav img{
 
 .docs ul li:nth-child(odd){
 	background:#ebeeef;
+}
+
+::-webkit-scrollbar-thumb {
+	z-index:999;
+	position:absolute;
 }
 
 @media only screen and (max-device-width: 480px){
